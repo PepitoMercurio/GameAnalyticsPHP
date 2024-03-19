@@ -1,0 +1,75 @@
+@import '../../variables/index.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: calc(100vh - #{$header-height});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    color: $green;
+    padding: $spacing-md $spacing-lg;
+    background: $bg2;
+    border-radius: $spacing-sm;
+    box-shadow: 0 0 10px $primary;
+    margin: 0 $spacing-md;
+
+    margin-top: -$header-height;
+
+    &__focus {
+      color: $primary;
+    }
+
+    @include breakpoint(md) {
+      font-size: 42px;
+    }
+  }
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  letter-spacing: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  padding: 0;
+}
+
+.user-content {
+
+}
+
+.Search_Result {
+  display: flex;
+  justify-content: center;
+}
+
+.SearchResult {
+  background-color: white;
+  color: black;
+  margin-left: 1.5rem;
+  width: 38rem;
+  border-radius: 10px;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.ArticleIcons {
+  margin-right: 5px;
+  color: orangered;
+}

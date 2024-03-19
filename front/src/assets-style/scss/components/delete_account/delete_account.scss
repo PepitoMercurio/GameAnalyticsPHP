@@ -1,0 +1,20 @@
+.delete-account {
+  display: flex;
+  color: black;
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, red 74%);
+  width: 11rem;
+  height: 3rem;
+  display: flex;
+  align-items: center; /* Centrage vertical */
+  justify-content: center;
+  border-radius: 15px;
+  outline: 1px solid transparent; // Ajoute une bordure transparente
+  box-shadow: 0 0 2px 2px rgba(226, 86, 86, 0.5); // Ajoute une ombre floutée
+  cursor: pointer;
+}
+
+.delete-account:hover {
+  background-color: rgb(140, 25, 25);
+  color: white;
+}

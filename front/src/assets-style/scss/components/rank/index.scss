@@ -1,0 +1,27 @@
+.rank_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+}
+
+.rank-card__left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  * {
+    margin-left: 1rem;
+  }
+}
+
+.rank_score {
+  margin-right: 1rem;
+}

@@ -1,0 +1,221 @@
+textarea[name='card__form-description']::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.visibility-off-newmember {
+  display: flex;
+  position: absolute;
+  margin-top: -6%;
+  margin-left: 18%;
+}
+
+.visibility-off-newpassword {
+  display: flex;
+  position: absolute;
+  margin-top: -3%;
+  margin-left: 18%;
+}
+
+.visibility-off-signin {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.visibility-off-signup {
+  display: flex;
+  position: absolute;
+  margin-top: 11%;
+  margin-left: 18%;
+}
+
+textarea[name='card__form-description'] {
+  width: 100%;
+  height: 100px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px #0096d3;
+  border-radius: 10px;
+  color: rgb(67, 67, 67);
+  resize: none;
+}
+textarea[name='card__form-description-error'] {
+  width: 100%;
+  height: 100px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px $red;
+  border-radius: 10px;
+  color: rgb(67, 67, 67);
+  resize: none;
+}
+
+.card__label-input-password {
+  position: absolute;
+  color: red;
+  font-size: 65%;
+  margin-left: 55%;
+  width: 100%;
+  margin-bottom: -280px;
+}
+
+.card__label-input-name-organisation {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 108%;
+  width: 100%;
+  margin-bottom: 210px;
+}
+
+.card__label-input-role-organisation {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 115.5%;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.card__label-input-siret {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 102%;
+  width: 100%;
+  margin-bottom: -55px;
+}
+
+.card__label-input-description {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 102%;
+  width: 100%;
+  margin-bottom: -360px;
+}
+.card__label-newpassword {
+  position: absolute;
+  color: red;
+  font-size: 65%;
+  margin-left: 60%;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.card__label-input-password-member {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 92%;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.card__label-input-description-character {
+  position: absolute;
+  color: gray;
+  font-size: 65%;
+  margin-left: 112.5%;
+  width: 100%;
+  margin-bottom: -330px;
+}
+input:valid ~ span {
+  display: block;
+}
+input[name='input-article'] {
+  width: 90%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-left: 4.5%;
+}
+
+
+input[name='input-searchbar'] {
+  display: flex;
+  width: 500px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 10px black;
+  border-radius: 5px;
+
+}
+
+input[name='input'] {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-bottom: 11px;
+}
+input[name='input-message'] {
+  width: 1400px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px orangered;
+  border-radius: 5px;
+  margin-bottom: 11px;
+}
+
+input[name='input-error'] {
+  font-family: 'Helvetica Medium', sans-serif !important;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px red;
+  border-radius: 5px;
+}
+
+.card__error {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: right;
+  line-height: 0.00001%;
+  color: red;
+  font-size: 15px;
+}
+
+.card__error--logo {
+  margin-top: -0.8%;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: right;
+  line-height: 0.00001%;
+  color: red;
+  font-size: 13px;
+}
+
+.input-image {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 10px;
+  margin-bottom: 11px;
+  justify-content: space-between;
+  color: grey;
+}
+
+.input-image__error {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: solid 1px red;
+  border-radius: 10px;
+  margin-bottom: 11px;
+  justify-content: space-between;
+  color: grey;
+}

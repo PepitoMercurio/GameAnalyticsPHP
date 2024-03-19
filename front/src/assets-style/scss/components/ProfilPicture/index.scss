@@ -1,0 +1,67 @@
+@import '../../variables/index.scss';
+
+.profilImages {
+  background-color: $grey;
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+.user-ban {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user-content {
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  display: flex;
+  position: relative;
+  box-shadow: 0 1px 5px orangered;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  padding: 1rem;
+  h1 {
+    color: orangered;
+  }
+  h2 {
+    color: aliceblue;
+  }
+  p {
+    color: white;
+  }
+}
+
+.user-avatar {
+  z-index: 1;
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  margin-left: 10%;
+  overflow: hidden;
+  box-shadow: 0 1px 5px orangered;
+  margin-top: -150px; /* Ajustez cette valeur en fonction de votre design */
+  object-fit: cover;
+}
+
+.user-avatar-article {
+  z-index: 1;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 1px 5px orangered;
+  margin-left: -5%;
+}

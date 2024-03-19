@@ -1,0 +1,98 @@
+$black: #111111;
+$grey: #101010;
+$light-grey: #808080;
+$orange: #f2a52b;
+$red: #cc313b;
+$red: #d44e49;
+$blue: #0b0b45;
+
+$background-color: #1d1d1d;
+
+$jenee_red: #ef3b39;
+
+$jenee_purple: #734e9f;
+
+$jenee_blue: #26a7df;
+
+$jenee_grey: #dddddd;
+
+$jenee_black: #010001;
+
+$jenee_white: #fff;
+
+$gradient_right: linear-gradient(
+  to right,
+  #ef3b39,
+  #e82b58,
+  #d82a73,
+  #c03588,
+  #a24297,
+  #9050a6,
+  #7b5cb1,
+  #6366b7,
+  #5377c6,
+  #4288d1,
+  #3198d9,
+  #26a7df
+);
+
+$gradient_bottom: linear-gradient(
+  to bottom,
+  #ef3b39,
+  #e82b58,
+  #d82a73,
+  #c03588,
+  #a24297,
+  #9050a6,
+  #7b5cb1,
+  #6366b7,
+  #5377c6,
+  #4288d1,
+  #3198d9,
+  #26a7df
+);
+
+$gradient_top: linear-gradient(
+  to top,
+  #ef3b39,
+  #e82b58,
+  #d82a73,
+  #c03588,
+  #a24297,
+  #9050a6,
+  #7b5cb1,
+  #6366b7,
+  #5377c6,
+  #4288d1,
+  #3198d9,
+  #26a7df
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$ubuntu-font: 'Ubuntu', sans-serif;
+
+$bg: rgb(255, 255, 255);
+$bg2: rgb(0, 0, 0);
+$text: rgb(15, 15, 15);
+$green: #32cd32;
+$primary: white;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$header-height: 90px;
+
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+}

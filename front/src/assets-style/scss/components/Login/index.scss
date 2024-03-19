@@ -1,0 +1,212 @@
+@import '../../variables/index.scss';
+
+.page__auth {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: $grey; /* Exemple de couleur de fond */
+  overflow: hidden;
+
+  &__left {
+    width: 50%;
+    display: flex;
+
+    align-items: center;
+    .card {
+      display: flex;
+      margin-left: 25%;
+      width: 50%;
+      height: auto; /* Utilisez "auto" pour permettre à la hauteur de la carte de s'ajuster en fonction du contenu */
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      background-color: black;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px 0 white, 0 6px 20px 0 white;
+      justify-content: space-around;
+      gap: 15px;
+
+      &__stepper {
+        display: flex;
+        color: aliceblue;
+        width: auto;
+        height: auto;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+      }
+
+      &__message {
+        display: flex;
+        color: aliceblue;
+        width: 100%;
+        height: auto;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__title {
+        display: flex;
+        font-size: 50px;
+        margin-top: 5%;
+        color: white;
+      }
+
+      &__form {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &__link-registration {
+        background: none;
+        color: orangered;
+        text-decoration: none;
+        margin-left: 1%;
+
+        &:active {
+          transform: scale(0.98);
+          color: white;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+
+      &__forgot-password {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+        width: 100%;
+        color: grey;
+        text-decoration: none;
+        justify-content: center;
+
+        &:active {
+          transform: scale(0.98);
+          color: $red;
+        }
+        &:hover {
+          color: orangered;
+        }
+      }
+      &__no-account {
+        width: 100%;
+        color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__forgot {
+        width: 100%;
+        color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  &__right {
+    background-color: $grey;
+    position: relative;
+
+    width: 50%;
+    &-cinder {
+      display: flex;
+      height: 100%;
+      margin-left: -10%;
+    }
+    &-artorias {
+      display: flex;
+      height: 100%;
+      margin-left: 40%;
+      margin-top: 10%;
+    }
+    &-image {
+      height: 80%;
+      display: flex;
+      margin-top: 15%;
+      margin-left: 63%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page__left {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0.5rem;
+    margin-left: 15%;
+    margin-top: 100%;
+    .card {
+      display: flex;
+      margin-top: -100%;
+      width: 200%;
+      align-items: center;
+      justify-content: center;
+      margin-left: 25%;
+      &__form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.card__succes {
+  margin-top: 30%;
+  margin-left: 30%;
+  width: 450px;
+}
+
+.card__reset-code {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  //margin-left: 65%;
+  justify-content: center;
+  width: 100%;
+  color: #0096d3;
+  text-decoration: none;
+}
+
+.card__info {
+  color: grey;
+}
+
+.card__form-submit {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(0.25turn, $red, orangered);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 5%;
+  cursor: pointer;
+  font-size: 100%;
+  justify-content: center;
+  padding-top: 15px;
+  font-weight: 100;
+}
+
+.background-img__login {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5%;
+  margin-right: -5%;
+  position: absolute;
+  z-index: 1;
+  width: 110%;
+}

@@ -1,0 +1,232 @@
+@import '../../variables/index.scss';
+
+.title_article {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 0.5%;
+}
+
+.page {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: #f42b03;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+
+
+  &__general__container{
+    margin-top: 7%;
+
+  }
+
+  flex-direction: column;
+  &__card_container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Add this line to center the content vertically */
+    width: 100%;
+    height: auto;
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    box-shadow: 0 6px 20px 0 white, 0 6px 20px 0 white;
+  }
+
+  &__article-post {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    &-card {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    &-button {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: linear-gradient(0.25turn, red, orangered);
+      padding: 15px;
+      border-radius: 20px; /* Ajoute une bordure arrondie */
+      cursor: pointer;
+    }
+  }
+  &__article-content {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__account {
+    position: relative;
+    flex: 0.5;
+    height: 30%;
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+    box-shadow: 0 1px 5px $primary;
+  }
+}
+
+.page__maincard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f42b03;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: auto;
+
+}
+
+.card_title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  box-shadow: 0 1px 5px orangered;
+  padding: 1%;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.friends {
+  margin-top: 2rem;
+  background-color: rgba(96, 96, 96, 0.53);
+  width: 40rem;
+  height: 40rem;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.game_history {
+  margin-top: 2rem;
+  background-color: rgba(96, 96, 96, 0.53);
+  width: 30rem;
+  height: 40rem;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.history_card {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  p {
+    text-align: center;
+  }
+}
+
+.right-side {
+  margin-top: 2rem;
+  width: 40rem;
+}
+
+.score {
+  height: 10rem;
+  background-color: rgba(96, 96, 96, 0.53);
+  border-radius: 10px;
+}
+
+.rank {
+  margin-top: 2rem;
+  background-color: rgba(96, 96, 96, 0.53);
+  border-radius: 10px;
+  height: 28rem;
+}
+
+.sidebar {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  justify-content: flex-start;
+  position: absolute;
+  background-color: $grey;
+}
+
+.title {
+  text-align: center;
+}
+
+.friends_list {
+  margin-left: 5rem;
+  width: 45%;
+  height: 40rem;
+  background-color: $light-grey;
+}
+
+.friend_card {
+  margin-top: 1rem;
+}
+
+.score_text p {
+  margin-top: 0.5rem;
+}
+
+.last_score {
+  font-size: 3rem;
+}
+
+.best_score {
+  font-size: 2rem;
+}
+
+.last_game {
+  height: 15rem;
+  background-color: $light-grey;
+}
+
+.classement {
+  margin-top: 40px;
+  background-color: $light-grey;
+}
+
+.all_rank {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// .get-request {
+//   box-shadow: 1px 1px 2px 0px rgb(83, 83, 83);
+// }
