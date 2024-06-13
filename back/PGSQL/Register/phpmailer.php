@@ -8,13 +8,13 @@ require '../../vendor/autoload.php';
     function Sendemail($email_sended_to) {
         $init = new PHPMailer(true);
         $init->isSMTP();
-        $init->Host = 'smtp.gmail.com';
+        $init->Host = null;
         $init->SMTPAuth = true;
-        $init->Username = 'gilgamesh101214@gmail.com';
-        $init->Password = 'mhbjcbbtnpnphgsw';
+        $init->Username = null;
+        $init->Password = null;
         $init-> SMTPSecure =  PHPMailer::ENCRYPTION_SMTPS;
         $init->Port = "465";
-        $init->setFrom('rr1294989@gmail.com');
+        $init->setFrom(null);
         $init->addAddress($email_sended_to);
         $init->isHTML(true);
         $init->Subject = "Barrage";
